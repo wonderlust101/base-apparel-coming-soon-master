@@ -1,0 +1,23 @@
+.text-input {
+  padding: 1rem 1.5rem;
+  border-radius: 50rem;
+  border: 2px solid var(--clr-primary-color-desaturated-red);
+  box-shadow: 5px 5px 25px var(--clr-primary-color-desaturated-red-box-shadow);
+
+  &::placeholder {
+    color: var(--clr-primary-color-desaturated-red);
+  }
+
+  &__error {
+    border: 2px solid var(--clr-primary-color-soft-red);
+  }
+
+  &__success {
+    border: 2px solid var(--clr-primary-color-green);
+  }
+
+  &:focus {
+    outline: none !important;
+    border: 2px solid var(--clr-primary-color-red);
+  }
+}

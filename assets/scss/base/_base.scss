@@ -3,3 +3,18 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  display: grid;
+  justify-items: center;
+
+  @include a.breakpoint(medium) {
+    background: url('../images/bg-pattern-desktop.svg') no-repeat;
+    background-size: cover;
+  }
+}
+
+main {
+  display: grid;
+  align-content: center;
+}

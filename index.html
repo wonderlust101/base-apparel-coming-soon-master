@@ -7,40 +7,42 @@
     <!--     <meta name="title" content="title"> -->
     <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--Remove later-->
-    <style>
-        @font-face {
-            font-family: 'VT323';
-            src: url('assets/fonts/DotGothic16-Regular.ttf');
-        }
-
-        * {
-            font-family: 'VT323', sans-serif;
-            font-size: 120px;
-        }
-    </style>
-    <!--Remove later-->
 </head>
-<body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
+<body class="coming-soon-layout">
+    <header class="header">
+        <img class="header__image" src="assets/images/logo.svg" alt="Base Apparel Logo" aria-hidden="true">
+        <h1 class="sr-only">Base Apparel</h1>
+    </header>
+
+    <div class="hero-layout" aria-hidden="true">
+        <picture class="hero-layout__image">
+            <source class="hero-layout__image" srcset="assets/images/hero-desktop.jpg" media="(min-width:56rem)">
+            <img class="hero-layout__image" src="assets/images/hero-mobile.jpg" alt="">
+        </picture>
     </div>
+
+    <main class="coming-soon-content-layout">
+        <h2><span class="emphasis">We're</span> coming soon</h2>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+        <form id="notification-form" class="form"novalidate>
+            <label class="sr-only" for="email">Email Address</label>
+            <input class="text-input form__email-input" id="email" type="email" autocomplete="email" spellcheck="false" placeholder="Email Address"
+                   required>
+            <p class="form__input-status" id="email-status">Please provide a valid email address</p>
+            <img class="form__error-icon" id="email-error-icon" src="assets/images/icon-error.svg" alt="Error Icon" aria-hidden="true">
+
+            <button class="button coming-soon-button" type="submit" aria-label="submit">
+                <img src="assets/images/icon-arrow.svg" alt="">
+            </button>
+        </form>
+    </main>
 
     <script src="assets/scripts/index.js"></script>
 </body>

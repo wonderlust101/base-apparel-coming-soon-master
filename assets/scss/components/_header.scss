@@ -1,0 +1,19 @@
+@use '../abstract' as a;
+
+.header {
+  width: 100%;
+  padding: 2.5rem;
+
+  @include a.breakpoint(medium) {
+    width: min(90%, 50rem);
+    padding: 2.5rem 0;
+  }
+
+  &__image {
+    width: 7.5rem;
+
+    @include a.breakpoint(medium) {
+      width: 10rem;
+    }
+  }
+}

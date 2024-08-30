@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 70%);
+  border: none;
+  border-radius: 50rem;
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, hsl(0, 100%, 95%) 0%, hsl(0, 100%, 88%) 70%);
+  }
+
+  &:active {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 70%);
+    box-shadow: 5px 5px 25px var(--clr-primary-color-desaturated-red-box-shadow);
+  }
+}

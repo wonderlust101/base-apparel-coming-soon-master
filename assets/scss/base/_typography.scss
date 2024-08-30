@@ -1,6 +1,35 @@
 @use '../abstract' as a;
 
 h1, h2, h3, h4,
-h5, h6, p {
+h5, h6, p, input {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--clr-netural-color-dark-grayish-red);
+}
 
+h2 {
+  font-size: 3.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+
+  @include a.breakpoint(medium) {
+    font-size: 5.25rem;
+    letter-spacing: 0.75rem;
+  }
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--clr-primary-color-desaturated-red);
+
+  @include a.breakpoint(medium) {
+    font-size: 1.1rem;
+  }
+}
+
+.emphasis {
+  font-weight: 300;
+  color: var(--clr-primary-color-desaturated-red);
 }
