@@ -21,7 +21,7 @@ h2 {
 
 p {
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 2;
   color: var(--clr-primary-color-desaturated-red);
 
   @include a.breakpoint(medium) {

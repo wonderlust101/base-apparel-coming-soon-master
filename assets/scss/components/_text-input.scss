@@ -3,6 +3,7 @@
   border-radius: 50rem;
   border: 2px solid var(--clr-primary-color-desaturated-red);
   box-shadow: 5px 5px 25px var(--clr-primary-color-desaturated-red-box-shadow);
+  background-color: transparent;
 
   &::placeholder {
     color: var(--clr-primary-color-desaturated-red);
@@ -17,7 +18,7 @@
   }
 
   &:focus {
-    outline: none !important;
+    outline: none;
     border: 2px solid var(--clr-primary-color-red);
   }
 }

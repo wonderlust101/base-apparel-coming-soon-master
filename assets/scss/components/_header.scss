@@ -5,7 +5,7 @@
   padding: 2.5rem;
 
   @include a.breakpoint(medium) {
-    width: min(90%, 50rem);
+    width: min(70%, 50rem);
     padding: 2.5rem 0;
   }
 
